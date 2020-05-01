@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parenthesis | Contact</title>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/name-checker.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/theme.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <h1><span class="primary-text">Paren</span>Thesis</h1>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+            <nav id="navbar">
+              <ul>
+                <nav role="navigation" class="role">
+                  <ul>
+                    <li><a href="#">Menu ></a>
+                      <ul class="dropdown">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+                <button type="submit" id="theme" onclick="tista()">theme</button>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="subheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>Contact</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page" class="contact">
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2><span class="primary-text">Get</span> In Touch</h2>
+            <p>Please use this form to contact us</p>
+            <form name="form" id="form">
+              <div>
+                <label for="name">Name</label><br>
+                <input data-rule="name" type="text" name="name" id="name" required>
+              </div>
+              <div>
+                <label for="mail">Email</label><br>
+                <input data-rule="mail" type="text" name="mail" id="mail" required>
+              </div>
+              <div>
+                <label for="meSsage">Message</label><br>
+                <textarea name="message" id="meSsage"></textarea>
+              </div>
+              <div>
+                <label for="mf">Male/ Female</label><br>
+                <input type="checkbox" name="mf" id="mf">&emsp;&emsp;&emsp;<input type="checkbox" name="m" id="m">
+              </div>
+            </form>
+            <button type="submit" name="button" onclick = "message(document.getElementById('name'))">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa fa-phone"></i> 0(800)-323-32-32</li>
+              <li><i class="fa fa-envelope"></i> support@parenthesis.test</li>
+              <li><i class="fa fa-map"></i> Gorodotska st. Lviv, Ukraine</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>About Us</h4>
+            <p>One of the best technology companies behind Forbes and The Guardian</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h4>Newsletter</h4>
+            <p>Subscribe to stay informed</p>
+            <button  data-toggle-id="subscribe-mail">Show form..</button>
+            <form id="subscribe-mail" hidden>
+              <input type="email" name="email" placeholder="Enter Email">
+              <button type="submit" name="button" data-toggle-id="subscribe-mail">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p>All rights reserved &copy; 2020 | Parenthesis</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
